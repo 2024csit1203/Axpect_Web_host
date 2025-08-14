@@ -161,17 +161,17 @@
     }
 
     /* Form styles */
-    form {
+  #contactForm {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
-    input, textarea {
+    .input-nav, .input-text {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
     }
-    button[type="submit"] {
+    .btn-nav[type="submit"] {
       padding: 12px;
       background: #007bff;
       border: none;
@@ -179,7 +179,7 @@
       border-radius: 6px;
       cursor: pointer;
     }
-    button[type="submit"]:hover {
+    .btn-nav[type="submit"]:hover {
       background: #0056b3;
     }
 

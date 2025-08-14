@@ -59,7 +59,7 @@
       border-radius: 12px;
     }
 
-    form {
+    #contactForm {
       display: flex;
       flex-direction: column;
       gap: 0px;
@@ -71,8 +71,8 @@
       color: #004080;
     }
 
-    input,
-    textarea {
+    .input-contact,
+    .input-contact-text {
       margin-top: 8px;
       padding: 12px 14px;
       font-size: 16px;
@@ -81,13 +81,13 @@
       transition: border-color 0.3s;
     }
 
-    input:focus,
-    textarea:focus {
+    .input-contact:focus,
+    .input-contact-text:focus {
       border-color: #00ab6b;
       outline: none;
     }
 
-    textarea {
+    .input-contact-text {
       resize: vertical;
       min-height: 120px;
     }
@@ -95,7 +95,7 @@
     button {
       margin-top: 25px;
       padding: 14px;
-      background-color: #00ab6b;
+      background-color: #007bff;
       color: white;
       font-size: 16px;
       font-weight: 600;
@@ -106,7 +106,7 @@
     }
 
     button:hover {
-      background-color: #007f4a;
+      background-color: #7793b1;
     }
 
     #form-message {
@@ -160,16 +160,16 @@
       
       <form id="contactForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="data[Name]" required />
+        <input type="text" id="name" name="data[Name]" required class="input-contact"/>
 
         <label for="number">Mob No:</label>
-        <input type="number" id="number" name="data[Mob No]" required />
+        <input type="number" id="number" name="data[Mob No]" required class="input-contact"/>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="data[Email Id]" required />
+        <input type="email" id="email" name="data[Email Id]" required class="input-contact"/>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="data[Message]" required></textarea>
+        <textarea id="message" name="data[Message]" required class="input-contact-text"></textarea>
 
         <button type="submit">Submit</button>
       </form>
